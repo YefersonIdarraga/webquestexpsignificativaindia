@@ -1,0 +1,234 @@
+/* Estructura general sobre fondo blanco */
+.recursos-page {
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  color: #222222;
+}
+
+.recursos-container {
+  width: 100%;
+  margin-top: 0;
+}
+
+/* Banner de encabezado */
+.hero-banner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-overlay {
+  width: 100%;
+  background-color: #1a1a2e; /* Mismo azul marino del menú */
+  padding: 2.5rem 1rem 2rem 1rem;
+  text-align: center;
+  border-bottom: 3px solid #e94560; /* Color acento */
+}
+
+.hero-overlay h1 {
+  font-size: 2.8rem;
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  margin-top: 0.5rem;
+  color: #e94560;
+  font-weight: 500;
+}
+
+/* Contenedor y dimensiones específicas de la imagen hero */
+.hero-image-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+.hero-image {
+  width: 60%;
+  height: 280px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: 0;
+}
+
+/* Contenedor de contenido */
+.content-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
+}
+
+.resource-section {
+  margin-bottom: 3rem;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  color: #1a1a2e;
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+  border-left: 4px solid #e94560;
+  padding-left: 0.75rem;
+}
+
+/* Contenedor para el Video */
+/* Contenedor del reproductor de video */
+.video-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #0f0f1a;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.video-player {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  display: block;
+  object-fit: contain;
+}
+
+.video-placeholder {
+  text-align: center;
+  color: #ffffff;
+}
+
+.play-icon {
+  font-size: 3rem;
+  color: #e94560;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.video-placeholder p {
+  font-size: 1.1rem;
+  margin: 0;
+  color: #e0e0e0;
+}
+
+/* Grilla de Recursos */
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Tarjetas de Recursos (Sin border-radius) */
+.resource-card {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 0;
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.resource-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  border-color: #e94560;
+}
+
+.card-tag {
+  align-self: flex-start;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #e94560;
+  background-color: #fdf2f4;
+  padding: 0.3rem 0.6rem;
+  margin-bottom: 0.8rem;
+}
+
+.doc-tag {
+  color: #1a1a2e;
+  background-color: #edf2f7;
+}
+
+.resource-card h3 {
+  font-size: 1.25rem;
+  color: #1a1a2e;
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+.resource-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #4a5568;
+  margin: 0 0 1.5rem 0;
+}
+
+/* Botones de enlace y documentos */
+.resource-button,
+.doc-button {
+  display: inline-block;
+  text-align: center;
+  background-color: #1a1a2e;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  border-radius: 0;
+}
+
+.resource-button:hover {
+  background-color: #e94560;
+}
+
+.doc-button {
+  background-color: #f8f9fa;
+  color: #1a1a2e;
+  border: 1px solid #1a1a2e;
+}
+
+.doc-button:hover {
+  background-color: #1a1a2e;
+  color: #ffffff;
+}
+
+/* Adaptación móvil */
+@media (max-width: 768px) {
+  .hero-overlay {
+    padding: 1.5rem 1rem;
+  }
+
+  .hero-overlay h1 {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: 200px;
+  }
+
+  .content-wrapper {
+    padding: 1.5rem 1rem;
+  }
+
+  .resources-grid {
+    grid-template-columns: 1fr;
+  }
+}

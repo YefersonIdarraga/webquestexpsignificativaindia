@@ -1,0 +1,162 @@
+/* Contenedor general en Fondo Blanco */
+.introduccion-page {
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  color: #222222;
+}
+
+.introduccion-container {
+  width: 100%;
+  margin-top: 0;
+}
+
+/* Encabezado con Título y Subtítulo ARRIBA de la imagen */
+.hero-banner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-overlay {
+  width: 100%;
+  background-color: #1a1a2e; /* Mismo azul marino del menú */
+  padding: 2.5rem 1rem 2rem 1rem;
+  text-align: center;
+  border-bottom: 3px solid #e94560; /* Acento activo */
+}
+
+.hero-overlay h1 {
+  font-size: 2.8rem;
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  margin-top: 0.5rem;
+  color: #e94560;
+  font-weight: 500;
+}
+
+/* Imagen ubicada DEBAJO del título sin oscurecer */
+.hero-image {
+  width: 60%;
+  height: 380px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: 0;
+  filter: none;
+  margin: 0 auto;
+}
+
+/* Sección de contenido sobre fondo blanco */
+.content-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
+}
+
+/* Tarjeta principal */
+.intro-card {
+  background-color: #f8f9fa; /* Gris muy claro para resaltar sobre el fondo blanco */
+  border-radius: 0;
+  padding: 2rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+  border-left: 5px solid #e94560;
+}
+
+.paragraph-lead {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #2b2b2b;
+  margin: 0;
+}
+
+.paragraph-lead strong {
+  color: #1a1a2e;
+}
+
+/* Columnas de información */
+.grid-two-columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Cajas de información */
+.info-box {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 0;
+  padding: 1.75rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.info-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  border-color: #e94560;
+}
+
+.info-box h2 {
+  font-size: 1.35rem;
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+}
+
+.route-box h2 {
+  color: #e94560;
+}
+
+.purpose-box h2 {
+  color: #1a1a2e;
+}
+
+.info-box p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #4a5568;
+  margin: 0;
+}
+
+.info-box strong {
+  color: #1a1a2e;
+}
+
+/* Adaptación responsiva para móviles */
+@media (max-width: 768px) {
+  .hero-overlay {
+    padding: 1.5rem 1rem;
+  }
+
+  .hero-overlay h1 {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .hero-image {
+    height: 180px;
+  }
+
+  .content-wrapper {
+    padding: 1.5rem 1rem;
+  }
+
+  .intro-card {
+    padding: 1.25rem;
+  }
+
+  .paragraph-lead {
+    font-size: 1rem;
+  }
+}

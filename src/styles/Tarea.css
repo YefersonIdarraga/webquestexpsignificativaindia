@@ -1,0 +1,219 @@
+/* Estructura general sobre fondo blanco */
+.tarea-page {
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  color: #222222;
+}
+
+.tarea-container {
+  width: 100%;
+  margin-top: 0;
+}
+
+/* Banner de encabezado (título arriba, imagen debajo) */
+.hero-banner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-overlay {
+  width: 100%;
+  background-color: #1a1a2e; /* Fondo igual al del menú */
+  padding: 2.5rem 1rem 2rem 1rem;
+  text-align: center;
+  border-bottom: 3px solid #e94560; /* Color acento */
+}
+
+.hero-overlay h1 {
+  font-size: 2.8rem;
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  margin-top: 0.5rem;
+  color: #e94560;
+  font-weight: 500;
+}
+
+.hero-image {
+  width: 60%;
+  height: 280px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: 0;
+}
+
+/* Contenido */
+.content-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
+}
+
+/* Tarjeta intro */
+.task-card {
+  background-color: #f8f9fa;
+  border-radius: 0;
+  padding: 1.75rem 2rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+  border-left: 5px solid #e94560;
+}
+
+.paragraph-lead {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #2b2b2b;
+  margin: 0;
+}
+
+.paragraph-lead strong {
+  color: #1a1a2e;
+}
+
+/* Sección de Reto */
+.challenge-section {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 0;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.challenge-header h2 {
+  color: #1a1a2e;
+  font-size: 1.6rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.challenge-header p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #4a5568;
+  margin-bottom: 1rem;
+}
+
+.challenge-header p strong {
+  color: #1a1a2e;
+}
+
+/* Requisitos del reto */
+.requirements-wrapper {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #edf2f7;
+}
+
+.requirements-wrapper h3 {
+  color: #e94560;
+  font-size: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.requirements-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.requirement-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border: 1px solid #edf2f7;
+}
+
+.req-number {
+  background-color: #1a1a2e;
+  color: #ffffff;
+  font-weight: 700;
+  min-width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+
+.req-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #4a5568;
+}
+
+.req-text strong {
+  color: #1a1a2e;
+}
+
+/* Producto final */
+.product-card {
+  background-color: #1a1a2e;
+  color: #ffffff;
+  padding: 1.75rem 2rem;
+  border-left: 5px solid #e94560;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.product-card h3 {
+  color: #e94560;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.product-card p {
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #e0e0e0;
+}
+
+.product-card strong {
+  color: #ffffff;
+}
+
+/* Adaptación móvil */
+@media (max-width: 768px) {
+  .hero-overlay {
+    padding: 1.5rem 1rem;
+  }
+
+  .hero-overlay h1 {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .hero-image {
+    height: 180px;
+  }
+
+  .content-wrapper {
+    padding: 1.5rem 1rem;
+  }
+
+  .challenge-section {
+    padding: 1.25rem;
+  }
+
+  .requirement-item {
+    padding: 0.8rem;
+  }
+}
