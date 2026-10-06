@@ -208,6 +208,61 @@
   color: #e94560;
 }
 
+/* */
+
+/* ===================================================
+   ESTILOS EXCLUSIVOS PARA EL CIERRE DEL PROYECTO
+   (Clases aisladas con prefijo 'cierre-')
+   =================================================== */
+
+/* Tarjeta contenedora de Cierre */
+.process-card.cierre-card-highlight {
+  background-color: #1a1a2e !important;
+  border: 1px solid #2a2a4a !important;
+  border-left: 6px solid #e94560 !important;
+  box-shadow: 0 8px 24px rgba(26, 26, 46, 0.25) !important;
+  padding: 2.25rem !important;
+}
+
+/* Título principal dentro del cierre */
+.cierre-card-title {
+  color: #ffffff !important;
+  font-size: 1.5rem !important;
+  font-weight: 700 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0.85rem !important;
+}
+
+/* Párrafo/Descripción principal del cierre */
+.cierre-card-text {
+  color: #f1f5f9 !important;
+  font-size: 1.1rem !important;
+  line-height: 1.8 !important;
+  margin: 0 !important;
+  font-weight: 400 !important;
+}
+
+/* Badge / Etiqueta del cierre */
+.cierre-tag-badge {
+  font-size: 0.8rem !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+  color: #ffffff !important;
+  background-color: #e94560 !important;
+  padding: 0.4rem 0.85rem !important;
+  border-radius: 0 !important;
+}
+
+/* Número del paso 05 */
+.cierre-number-big {
+  font-size: 2rem !important;
+  font-weight: 800 !important;
+  color: #ffffff !important;
+  opacity: 0.25 !important;
+  line-height: 1 !important;
+}
+
 /* Adaptación móvil */
 @media (max-width: 768px) {
   .hero-overlay {

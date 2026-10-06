@@ -17,7 +17,7 @@ const Proceso = () => {
       description:
         'Registrar ejemplos de cómo la plataforma facilita el acceso a contenidos, recursos y experiencias de aprendizaje.',
       details: [
-        'Libros de texto enriquecidos',
+        'Libros de texto enrichedos',
         'Formación docente',
         'Cuestionarios interactivos',
         'Creación y consumo de contenidos',
@@ -84,15 +84,24 @@ const Proceso = () => {
             {steps.map((step, index) => (
               <article
                 key={index}
-                className={`process-card ${step.isHighlight ? 'highlight-card' : ''}`}
+                className={`process-card ${step.isHighlight ? 'cierre-card-highlight' : ''}`}
               >
                 <div className="card-header">
-                  <span className="step-badge">{step.tag}</span>
-                  <span className="step-number">{step.number}</span>
+                  <span className={step.isHighlight ? "cierre-tag-badge" : "step-badge"}>
+                    {step.tag}
+                  </span>
+                  <span className={step.isHighlight ? "cierre-number-big" : "step-number"}>
+                    {step.number}
+                  </span>
                 </div>
 
-                <h2>{step.title}</h2>
-                <p className="step-description">{step.description}</p>
+                <h2 className={step.isHighlight ? "cierre-card-title" : ""}>
+                  {step.title}
+                </h2>
+
+                <p className={step.isHighlight ? "cierre-card-text" : "step-description"}>
+                  {step.description}
+                </p>
 
                 {/* Sublista de aportes de DIKSHA */}
                 {step.details && (
